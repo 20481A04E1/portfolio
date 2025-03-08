@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marri Saikrishna - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        @keyframes gradientAnimation {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(45deg, #1E3C72, #2A5298, #0F2027);
+            background-size: 400% 400%;
+            animation: gradientAnimation 10s ease infinite;
+            color: white;
+            text-align: center;
+        }
+        header {
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #00c3ff;
+        }
+        section {
+            padding: 60px 20px;
+            animation: fadeIn 1.5s ease-in;
+        }
+        .project, .skills {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 600px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2);
+            transition: transform 0.3s;
+        }
+        .project:hover, .skills:hover {
+            transform: scale(1.05);
+        }
+        footer {
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            margin-top: 20px;
+            font-size: 14px;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Marri Saikrishna</h1>
+        <p>Salesforce Developer | ML Enthusiast</p>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am a passionate Salesforce Developer with experience in Salesforce administration and development. My goal is to optimize CRM functionality and contribute innovative solutions.</p>
+    </section>
+    
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>University Application Development</h3>
+            <p>Developed an admin panel to streamline university admissions using Salesforce automation.</p>
+        </div>
+        <div class="project">
+            <h3>EdTech Salesforce Implementation</h3>
+            <p>Designed a Salesforce CRM solution to enhance student enrollment and analytics.</p>
+        </div>
+        <div class="project">
+            <h3>Parkinson’s Disease Detection</h3>
+            <p>Used Machine Learning models and feature selection for improved diagnosis accuracy.</p>
+        </div>
+    </section>
+    
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills">
+            <p><strong>Salesforce Development:</strong> Apex, SOQL, Triggers, Lightning Components</p>
+            <p><strong>Salesforce Administration:</strong> Reports, Dashboards, Workflow Rules, Process Builder</p>
+            <p><strong>Programming Languages:</strong> Python, Java (Basics), JavaScript</p>
+            <p><strong>Web Development:</strong> HTML, CSS, JavaScript</p>
+            <p><strong>Machine Learning:</strong> Feature Selection, Model Optimization</p>
+        </div>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: <a href="mailto:marrisaikrishna18@gmail.com">marrisaikrishna18@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/marri-saikrishna-884653254/" target="_blank">LinkedIn Profile</a></p>
+        <p>GitHub: <a href="https://github.com/" target="_blank">GitHub Profile</a></p>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Marri Saikrishna. All rights reserved.</p>
+    </footer>
+</body>
+</html>
